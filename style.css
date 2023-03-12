@@ -1,0 +1,56 @@
+section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.text{
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    padding: 20px 10px 15px 20px
+    font-family "Times New Roman", Times, serif;
+    font-family: "Times New Roman", Times, serif;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+  }
+ body {
+    margin: 0;
+ }
+ .container {
+    display: flex;
+    flex-wrap: wrap;
+ }
+ .aside, .main {
+    width: 100%;
+    min-height: 1px;
+ }
+
+@media (min-width: 990px) {
+    .aside {
+      flex: 0 0 33.333333%;
+      max-width: 33.333333%;
+      order: 1;
+    }
+    .main {
+      flex: 0 0 66.666667%;
+      max-width: 66.666667%;
+      order: 2;
+    }
+   }
+
+@media (min-width: 1400px) {
+    .aside {
+      flex: 0 0 25%;
+      max-width: 25%;
+    }
+    .main {
+      flex: 0 0 75%;
+      max-width: 75%;
+    }
+   }
